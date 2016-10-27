@@ -79,10 +79,11 @@ registerModule({
                 }
             }
         } else {
+        print("off")
             for (var j = 1; j < 256; j++) {
                 if (BLOCK_ORES.indexOf(j) < 0) {
-                    Block.setShape(i, 0, 0, 0, 1, 1, 1);
-                    Block.setLightOpacity(i, 0);
+                    Block.setShape(j, 0, 0, 0, 1, 1, 1);
+                    Block.setLightOpacity(j, 1);
                 } else {
                     Block.setLightLevel(j, 0.1);
                     Block.setShape(j, 0, 0, 0, 1, 1, 1);
