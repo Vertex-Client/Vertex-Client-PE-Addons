@@ -67,25 +67,25 @@ registerModule({
         if (this.state) {
             for (var i = 1; i < 256; i++) {
                 if (BLOCK_ORES.indexOf(i) < 0) {
-                    Block.setRenderLayer(i, 0);
+                    Block.setShape(i, 0, 0.99, 0, 1, 1, 1);
+                    Block.setLightOpacity(i, 0);
                 } else {
                     if (i === 73 || i === 74) {
                         Block.setLightLevel(i, 12);
                     } else {
                         Block.setLightLevel(i, 15);
                     }
-                    Block.setRenderLayer(i, 1);
                     Block.setShape(i, 0.001, 0.001, 0.001, 0.999, 0.999, 0.999);
                 }
             }
         } else {
             for (var j = 1; j < 256; j++) {
                 if (BLOCK_ORES.indexOf(j) < 0) {
-                    Block.setRenderLayer(j, 1);
+                    Block.setShape(i, 0, 0, 0, 1, 1, 1);
+                    Block.setLightOpacity(i, 0);
                 } else {
                     Block.setLightLevel(j, 0.1);
-                    Block.setRenderLayer(j, 1);
-                    Block.setShape(j, 0.001, 0.001, 0.001, 0.999, 0.999, 0.999);
+                    Block.setShape(j, 0, 0, 0, 1, 1, 1);
                 }
             }
         }
