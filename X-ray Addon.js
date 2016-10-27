@@ -79,7 +79,6 @@ registerModule({
                 }
             }
         } else {
-        print("off")
             for (var j = 1; j < 256; j++) {
                 if (BLOCK_ORES.indexOf(j) < 0) {
                     Block.setShape(j, 0, 0, 0, 1, 1, 1);
