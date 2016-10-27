@@ -1,11 +1,11 @@
 /**
- * @file X-ray Addon for Vertex Client PE
+ * @file X-Ray Addon for Vertex Client PE
  * @author Astro <astr36@naver.com>
  * @version 1.0
  * @license GPL-3.0
  */
-const ADDON_NAME = "X-ray Mod",
-    ADDON_DESC = "X-ray Mod",
+const ADDON_NAME = "X-Ray",
+    ADDON_DESC = "Adds X-Ray into Vertex Client PE",
     ADDON_VERSION = "1.0",
     TARGET_VERSION = "1.7",
     BLOCK_ORES = [14, 15, 16, 56, 73, 74],
@@ -54,9 +54,9 @@ function callFunction(functionName, propArray) {
 }
 
 registerModule({
-    name: "X-ray",
-    desc: "Enables X-ray.",
-    category: Category.COMBAT,
+    name: "X-Ray",
+    desc: "Allows you to see ores through blocks.",
+    category: Category.MISC,
     type: "Mod",
     state: false,
     isStateMod() {
